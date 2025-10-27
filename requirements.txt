@@ -1,12 +1,3 @@
-# --------------------------------------------
-# ✅ YourTTS Hindi Streamlit Deployment (Stable)
-# --------------------------------------------
-
-# Prevent numpy 2.x and pip auto-upgrade issues
-pip==24.0
-setuptools<70
-wheel
-
 # Core dependencies (pinned for Coqui + Streamlit)
 numpy==1.26.4
 cython==3.1.4
