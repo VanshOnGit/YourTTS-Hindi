@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "🔧 Re-installing pinned numpy version..."
+pip install --force-reinstall numpy==1.26.4
