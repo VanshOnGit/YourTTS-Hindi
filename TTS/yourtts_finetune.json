@@ -1,0 +1,31 @@
+{
+  "output_path": "./exp_finetune",
+  "datasets": [
+    {
+      "name": "custom",
+      "meta_file_train": "metadata.csv",
+      "path": "../audiofiles",
+      "formatter": "ljspeech",
+      "eval_split": false
+    }
+  ],
+  "train": {
+    "batch_size": 1,
+    "epochs": 10,
+    "num_loader_workers": 0,
+    "print_step": 1,
+    "run_eval": false,
+    "eval_split_size": 0.0556
+
+  },
+  "model": "vits",
+  "restore_path": "../models/model_file.pth",
+  "speaker_encoder": {
+    "restore_path": "../models/speaker_encoder.pth",
+    "config_path": "../models/speaker_encoder_config.json"
+  },
+  "vocoder": {
+    "restore_path": "../models/vocoder.pth",
+    "config_path": "../models/vocoder_config.json"
+  }
+}

@@ -1,0 +1,67 @@
+# core deps
+numpy==1.26.4
+cython==3.1.4
+scipy==1.15.3
+torch==2.8.0
+torchaudio==2.8.0
+soundfile==0.13.1
+librosa==0.11.0
+scikit-learn==1.7.2
+numba==0.62.1
+inflect==7.5.0
+tqdm==4.67.1
+anyascii==0.3.3
+pyyaml==6.0.3
+fsspec==2025.9.0
+aiohttp==3.12.15
+packaging==25.0
+mutagen==1.47.0
+
+# deps for examples
+flask==3.1.2
+
+# deps for inference
+pysbd==0.3.4
+
+# deps for notebooks
+umap-learn==0.5.7
+pandas==1.5.3
+
+# deps for training
+matplotlib==3.8.4
+
+# coqui stack
+trainer==0.0.36
+
+# config management
+coqpit==0.0.17
+
+# chinese g2p deps
+jieba==0.42.1
+pypinyin==0.55.0
+
+# korean deps
+hangul_romanize==0.1.0
+jamo==0.4.1
+nltk==3.9.1
+g2pkk==0.1.2
+
+# gruut + supported langs
+gruut[de,es,fr]==2.2.3
+
+# deps for bangla
+bangla==0.0.5
+bnnumerizer==0.0.2
+bnunicodenormalizer==0.1.7
+
+# deps for tortoise
+einops==0.8.1
+transformers==4.56.2
+
+# deps for bark
+encodec==0.1.1
+
+# deps for XTTS
+unidecode==1.4.0
+num2words==0.5.14
+spacy[ja]==3.8.7
