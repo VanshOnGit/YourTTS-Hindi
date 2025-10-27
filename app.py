@@ -1,3 +1,9 @@
+import torch
+_old_torch_load = torch.load
+def _safe_torch_load(*args, **kwargs):
+    kwargs["weights_only"] = False
+    return _old_torch_load(*args, **kwargs)
+torch.load = _safe_torch_load
 import sys, os
 sys.path.append(os.path.abspath("./TTS"))
 import streamlit as st
